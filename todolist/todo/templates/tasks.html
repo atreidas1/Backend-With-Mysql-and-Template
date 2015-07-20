@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Tasks Listing</title>
+</head>
+<style>
+  table{
+    border: 1px solid black;
+  }
+  table td{
+    padding: 5px;
+  }
+</style>
+<body>
+  <h1>All tasks</h1>
+  <table>
+    <tr>
+      <td>
+        Task
+      </td>
+      <td>
+        Date
+      </td>
+      <td>
+        Is finished
+      </td>
+      <td>
+        User
+      </td>
+    </tr>
+     {% for task in tasks %}
+     <tr>
+      <td>
+        {{task.task}}
+      </td>
+      <td>
+        {{task.deadline}}
+      </td>
+      <td>
+        {{task.status}}
+      </td>
+      <td>
+        {{task.user}}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

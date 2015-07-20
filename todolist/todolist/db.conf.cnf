@@ -1,0 +1,6 @@
+# my.cnf
+[client]
+database = TODO
+user = root
+password = 1111
+default-character-set = utf8
